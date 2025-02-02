@@ -38,15 +38,18 @@
     <style>
         .font-sora {
             font-family: "Sora", serif;
+        }
 
+        .bg-secondary {
+            background-color: #EFEBE3;
         }
     </style>
 </head>
 
 <body class="font-sora">
-    <header>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
         <!-- navbar -->
-        <div class="navbar border-b-2 border-green-600 md:border-0 max-w-screen-xl mx-auto">
+        <div class="navbar border-b-2 border-green-600 md:border-0 max-w-screen-xl mx-auto px-8">
             <!-- left -->
             <div class="navbar-start">
                 <img class="md:hidden w-8" src="c2-assets/sm-logo-header.png" alt="leaf">
@@ -54,7 +57,7 @@
             </div>
             <!-- middle -->
             <div class="navbar-center hidden lg:block ">
-                <ul class="grid lg:grid-cols-3 menu md:menu-horizontal rounded-box text-xl">
+                <ul class="grid lg:grid-cols-3 menu md:menu-horizontal rounded-box">
                     <li><a>Product</a></li>
                     <li><a>Services</a></li>
                     <li><a>Contact Us</a></li>
@@ -82,11 +85,12 @@
 
                     </button>
                     <!-- login button -->
-                    <button class="btn border-green-600 text-xl">Login</button>
+                    <button class="btn border-green-600">Login</button>
                     <!-- Register button -->
-                    <button class="btn bg-green-600 text-white text-xl ml-3">Register</button>
+                    <button class="btn bg-green-600 text-white">Register</button>
                 </div>
                 <!-- hamburger menu -->
+
                 <div class="md:hidden dropdown dropdown-left">
                     <div tabindex="0" role="button" class="btn btn-ghost m-1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -108,11 +112,94 @@
             </div>
         </div>
         <!-- banner -->
-         
-    </header>
-    
-    <main>
+        <!-- banner content -->
+        <div class="hero mt-16 md:mt-20 overflow-hidden">
+            <div class="max-w-screen-md  text-center">
+                <h1 class="text-3xl md:text-5xl font-semibold ">Freshness <span class="text-green-600">You Can <br>
+                        Count On</span>, Prices You’ll Love!
+                </h1>
 
+                <p class="py-8  text-xl  animate-bounce">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                    covered every day!
+                </p>
+            </div>
+        </div>
+        <!-- Banner dp -->
+        <div class="max-w-screen-lg  mx-auto">
+            <img src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+
+    <main class="">
+        <!-- services section -->
+        <section class="max-w-screen-xl mx-auto px-4 md:px-8 my-12 md:my-36">
+            <h2 class="text-4xl font-semibold text-green-600 pb-8">
+                Services
+            </h2>
+            <!-- card container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- card 1 -->
+                <div class="card bg-secondary p-6">
+                    <!-- card logo -->
+                    <div class="rounded-full bg-white p-5 mx-auto">
+                        <img src="c2-assets/service.png" alt="24/7" class="w-20" />
+                    </div>
+                    <!-- card content -->
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">24/7 Services </h2>
+
+                        <p class="font-light text-base lg:text-xl text-stone-500">We're always here to meet your needs, day or night.</p>
+                    </div>
+
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-secondary p-6">
+                    <!-- card logo -->
+                    <div class="rounded-full bg-white p-5 mx-auto">
+                        <img src="c2-assets/delivery.png" alt="24/7" class="w-20" />
+                    </div>
+                    <!-- card content -->
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Fast Delivery </h2>
+
+                        <p class="font-light text-base lg:text-xl text-stone-500">Speed and reliability are our top priorities.</p>
+                    </div>
+
+                </div>
+                
+                <!-- card 3 -->
+                <div class="card bg-secondary p-6">
+                    <!-- card logo -->
+                    <div class="rounded-full bg-white p-5 mx-auto">
+                        <img src="c2-assets/healthy.png" alt="24/7" class="w-20" />
+                    </div>
+                    <!-- card content -->
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl font-semibold">Healthy Products  </h2>
+
+                        <p class="font-light text-base lg:text-xl text-stone-500">Enjoy nutritious choices that support your well-being.
+                        </p>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+
+
+        </section>
+        <!-- popular products section -->
+        <section class="bg-secondary h-96">
+
+
+
+        </section>
+        <!-- EXTRA SECTION -->
+        <section></section>
+        <!-- arrival & offer section -->
+        <section></section>
     </main>
     <footer>
 
