@@ -26,21 +26,7 @@
     <!-- Tailwind + DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- customizing tailwind config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-
-
-                }
-            }
-        }
-    </script>
-
+   
     <!-- Vanilla CSS -->
     <style>
         .font-sora {
@@ -219,7 +205,7 @@
                         <div class="p-6 lg:p-8 space-y-2">
                             <h2 class="card-title text-white font-bold text-xl lg:text-3xl">30% OFF</h2>
                             <p class="text-base lg:text-xl text-gray-700">Discover a world of treats, toys, and
-                                essentials handpicked for your beloved pets</p>
+                                essentials handpicked for your furry friends.</p>
                             <div class="card-actions justify-start">
                                 <button class="btn bg-white">Buy Now</button>
                             </div>
@@ -516,7 +502,8 @@
 
         <!-- Grocery News Section [FLOATING] -->
         <section class="max-w-screen-xl mx-auto  px-4 md:px-8 mt-12 md:mt-36 ">
-            <div class="flex flex-col lg:flex-row justify-around py-5 lg:py-12 bg-secondary rounded-3xl -mb-52 relative">
+            <div
+                class="flex flex-col lg:flex-row justify-around py-5 lg:py-12 bg-secondary rounded-3xl -mb-52 relative">
                 <!-- veg basket image -->
                 <div class="">
                     <img src="c2-assets/vegetable-busket.png" alt="">
@@ -540,9 +527,35 @@
 
     </main>
     <!-- footer section -->
-    <footer class="bg-[#179800] h-96">
+    <footer class="bg-[#179800] min-h-96">
         <!-- footer content full container -->
-        <div class="max-w-screen-xl mx-auto">
+        <div class="max-w-screen-xl mx-auto pt-60 px-4 md:px-8 grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] lg:gap-x-24">
+
+            <!-- footer left -->
+            <div class="space-y-4">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-white opacity-70 text-base lg:text-xl">Discover a world of treats, toys, and essentials
+                    handpicked for your furry friends.</p>
+            </div>
+            <!-- footer middle -->
+            <div class="mt-4">
+                <ul class=" text-white space-y-5 text-base lg:text-xl">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- footer right -->
+            <div class="mt-9  text-white text-sm lg: space-y-4">
+                <h1>Follow Us</h1>
+                <div class="space-x-7">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
 
         </div>
 
